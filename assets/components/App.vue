@@ -5,7 +5,6 @@
 <script>
     import Jwt from "./page/Jwt.vue";
     import Cors from "./page/Cors.vue";
-    import Login from "./page/Login.vue";
 
     export default {
         created() {
@@ -16,8 +15,6 @@
               break;
             case 'cors':
               this.activeComponent = Cors;
-            case 'login':
-              this.activeComponent = Login;
             default:
               new Error('No component')
           }
